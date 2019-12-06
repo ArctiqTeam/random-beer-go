@@ -12,15 +12,6 @@ jobs:
       with:
         go-version: 1.13
       id: go
-
-    - name: Debug PATH - PRE
-      run: |
-        pwd
-        echo ${GOPATH}
-        echo ${GOROOT}
-
-    #- name: Check out code into the Go module directory
-    #  uses: actions/checkout@v1
     
     - name: Check out code to a GOPATH compatible directory
       uses: actions/checkout@v1
@@ -28,17 +19,6 @@ jobs:
         fetch-depth: 1
         path: go/src/github.com/arctiqteam/random-beer-go
 
-
-    - name: Debug PWD
-      run: |
-        pwd
-        ls -l
-
-    - name: Debug POST
-      run: |
-        pwd
-        echo ${GOPATH}
-        echo ${GOROOT}
     
     - name: Get dependencies
       run: |
