@@ -5,8 +5,13 @@ jobs:
     name: runner / golangci-lint
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code into the Go module directory
+
+      - name: Check out code to a GOPATH compatible directory
         uses: actions/checkout@v1
+        with:
+         fetch-depth: 1
+         path: go/src/github.com/arctiqteam/random-beer-go
+        
       - name: golangci-lint
         uses: reviewdog/action-golangci-lint@v1
         with:
