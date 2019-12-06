@@ -1,4 +1,4 @@
-![](https://github.com/ArctiqTeam/random-beer-go/workflows/Go-Build-Test/badge.svg)
+![](https://github.com/ArctiqTeam/random-beer-go/workflows/Go-Build-Test/badge.svg)![](https://github.com/ArctiqTeam/random-beer-go/workflows/Linting/badge.svg)
 
 # random-beer-go
 Random Beer Giphy - Refactored in Native GO
